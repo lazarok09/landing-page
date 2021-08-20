@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap");
+/* Custom fonts */
+/*
+font-family: 'Montserrat', sans-serif; // bold : 900;
+font-family: 'Open Sans', sans-serif; // regular an bold : 400/italic, 700;
+*/
+:root {
+  --primary-color: #2fe9f7;
+  --white-color: #fff;
+  --gap: 3rem;
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  border: none;
+  box-shadow: none;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+  color: var(--primary-color);
+
+  font-size: 2rem;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif;
+}
+h1 {
+  text-transform: uppercase;
+  font-size: 8rem;
+}
+h2 {
+  font-size: 7.5rem;
+}
+h3 {
+  font-size: 7.5rem;
+}
+h4 {
+  font-size: 6.5rem;
+}
+h5 {
+  font-size: 6rem;
+}
+h6 {
+  font-size: 5.5rem;
+}
+
+.main-background {
+  background-image: url("../img/confetti-doodles.svg");
+  background-size: cover;
+  background-position: center center;
+  color: var(--white-color);
+}
+.white-background {
+  background: var(--white-color);
+  color: black;
+}
+.main-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: var(--gap);
+}
+/* for each section on website */
+.section {
+  min-height: 100vh;
+}

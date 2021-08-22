@@ -1,10 +1,13 @@
 .intro-content {
+  position: relative;
+  top: -8rem;
   display: grid;
   grid-template-columns: 1fr 1.5fr;
   gap: var(--gap);
-  height: 100vh;
+  min-height: 100vh;
 }
-.intro-text-content {
+.intro-text-content,
+.intro-img {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -14,9 +17,9 @@
 .top3-content {
   max-width: 64rem;
   display: flex;
-  flex-flow: column wrap;
+  flex-flow: column nowrap;
   justify-content: center;
-  height: 100vh;
+  min-height: 100vh;
   text-align: center;
 }
 
@@ -24,18 +27,18 @@
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
-  height: 100vh;
+  min-height: 100vh;
 }
 .grid-main-heading {
   margin-bottom: 1rem;
 }
 .grid-description {
-  padding-bottom: 3rem;
+  padding-bottom: 5rem;
 }
 .grid {
   display: grid;
-  gap: var(--gap);
   grid-template-columns: repeat(3, 1fr);
+  gap: var(--gap);
   counter-reset: grid-counter;
 }
 .grid h3 {

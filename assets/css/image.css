@@ -1,0 +1,10 @@
+.intro-img {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.intro-img img {
+  max-width: 100%;
+  height: auto;
+}

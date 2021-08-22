@@ -9,11 +9,13 @@
   flex-direction: column;
   justify-content: center;
   flex-wrap: wrap;
-  border: 1px solid red;
 }
 
-.intro-text-content h2 {
-  font-size: 6rem;
-  text-transform: uppercase;
-  margin-bottom: 4rem;
+.top3-content {
+  max-width: 64rem;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
 }

@@ -57,3 +57,7 @@ font-family: 'Open Sans', sans-serif; // regular an bold : 400/italic, 700;
 .menu-spacing {
   height: 65px;
 }
+
+.close-menu {
+  display: none;
+}

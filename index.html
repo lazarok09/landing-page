@@ -18,21 +18,26 @@
 </head>
 
 <body>
+  <input id="close-menu" type="checkbox" role="button" aria-label="close menu" class="close-menu" />
+  <label for="close-menu" title="Close menu" class="close-menu-label"></label>
+
   <aside class="menu white-bg">
     <div class="main-content menu-content">
-      <h1><a href="#home"> logo </a></h1>
+      <h1 onclick="getElementById('close-menu').checked = false"><a href="#home"> logo </a></h1>
       <nav>
-        <ul>
+        <ul onclick="getElementById('close-menu').checked = false">
           <li><a href="#intro">Intro</a></li>
           <li><a href="#top3">Top 3</a></li>
           <li><a href="#galeria">Galeria</a></li>
-          <li><a href="#salary">Trabalho</a></li>
+          <li><a href="#salary">Salário</a></li>
           <li><a href="#contact">Contato</a></li>
         </ul>
       </nav>
     </div>
   </aside>
   <div class="menu-spacing"></div>
+
+  <!-- home area -->
   <section id="home" class="intro main-bg section">
     <div class="main-content intro-content">
       <div class="intro-text-content">
@@ -54,6 +59,7 @@
       </div>
     </div>
   </section>
+  <!-- introduction area -->
   <section id="intro" class="white-bg section">
     <div class="main-content top3-content">
       <h2>TOP 3 áreas</h2>
@@ -72,7 +78,7 @@
       </p>
     </div>
   </section>
-
+  <!-- top 3 area -->
   <section id="top3" class="grid-one main-bg section">
     <div class="main-content grid-one-content">
       <h2 class="grid-main-heading">As 3 vertentes</h2>
@@ -112,7 +118,7 @@
       </div>
     </div>
   </section>
-
+  <!-- gallery area  -->
   <section id="galeria" class="grid-one white-bg section">
     <div class="main-content grid-one-content">
       <h2 class="grid-main-heading">Galeria</h2>
@@ -151,6 +157,7 @@
     </div>
   </section>
 
+  <!-- salary area -->
   <section id="salary" class="white-bg section">
     <div class="main-content top3-content">
       <h2>salário</h2>
@@ -215,6 +222,8 @@
     </div>
   </section>
 
+  <!-- contact area  -->
+
   <section id="contact" class="intro main-content main-bg section">
     <div class="main-content intro-content">
       <div class="intro-text-content">
@@ -224,7 +233,8 @@
           e ajuda mútua.
 
           O que inclui atividades voltadas à carreira e negócios, através da manutenção de
-          relacionamentos interpessoais produtivos. Através do Networking podemos conseguir vagas de emprego, dicas de cursos e especializações nas mais diversas áreas.
+          relacionamentos interpessoais produtivos. Através do Networking podemos conseguir vagas de emprego, dicas de
+          cursos e especializações nas mais diversas áreas.
         <blockquote>
           É o verdadeiro <i>Como Fazer Amigos e Influenciar Pessoas </i>
         </blockquote>
@@ -265,9 +275,9 @@
 
 </body>
 <footer class="white-bg">
-  <p>Feito com <span>❤</span> por 
+  <p>Feito com <span>❤</span> por
     <a target="_blank" href="https://www.linkedin.com/in/lazarok09/">Lázaro Souza</a>
   </p>
 </footer>
-
+<a class="back-to-top" href="#">➤</a>
 </html>

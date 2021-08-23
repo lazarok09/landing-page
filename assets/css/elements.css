@@ -1,9 +1,9 @@
 * {
-  box-sizing: border-box;
   padding: 0;
   margin: 0;
   border: none;
   box-shadow: none;
+  box-sizing: border-box;
 }
 html {
   font-size: 62.5%;
@@ -79,4 +79,31 @@ table th {
 }
 th.area-name {
   background: var(--white-color);
+}
+textarea {
+  resize: none;
+  min-width: 100%;
+}
+blockquote {
+  text-shadow: 0 1px 1px var(--white-color);
+  transition: all 300ms ease-in-out;
+}
+blockquote:hover {
+  text-shadow: 0 2px 3px var(--white-color);
+  transform: scale(1.1);
+}
+
+footer p {
+  margin: auto;
+  text-align: center;
+  padding: 3rem;
+  color: inherit;
+}
+footer span {
+  color: red;
+}
+footer a:hover {
+  color: var(--primary-color);
+  text-decoration: underline;
+  text-decoration-color: red;
 }

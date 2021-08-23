@@ -11,9 +11,13 @@
 .main-content {
   max-width: 120rem;
   margin: 0 auto;
-  padding: 10rem var(--gap);
+  padding: 8rem var(--gap);
 }
 /* for each section on website */
 .section {
   min-height: 100vh;
+}
+body .full-width {
+  width: 100%;
+  flex: 1 1 100%;
 }

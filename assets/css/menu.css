@@ -13,7 +13,7 @@ font-family: 'Open Sans', sans-serif; // regular an bold : 400/italic, 700;
   right: 0;
   left: 0;
   width: 100%;
-  border-bottom: 0.1rem solid var(--light-grey-color);
+  border-bottom: 0.1rem solid var(--light-gray-color);
 }
 .menu-content {
   display: flex;

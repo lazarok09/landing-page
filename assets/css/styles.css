@@ -8,9 +8,8 @@
 .intro-text-content,
 .intro-img {
   display: flex;
-  flex-direction: column;
+  flex-flow: column wrap;
   justify-content: center;
-  flex-wrap: wrap;
 }
 
 .top3-content {

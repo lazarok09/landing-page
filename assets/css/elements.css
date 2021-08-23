@@ -85,12 +85,14 @@ textarea {
   min-width: 100%;
 }
 blockquote {
-  text-shadow: 0 1px 1px var(--white-color);
   transition: all 300ms ease-in-out;
 }
 blockquote:hover {
-  text-shadow: 0 2px 3px var(--white-color);
-  transform: scale(1.1);
+  color: var(--primary-color);
+  text-shadow: 0 1px 1px var(--primary-color);
+  background: var(--white-color);
+  cursor: pointer;
+  transform: scale(1.02);
 }
 
 footer p {
@@ -99,11 +101,12 @@ footer p {
   padding: 3rem;
   color: inherit;
 }
-footer span {
-  color: red;
-}
-footer a:hover {
+
+.ancor-red-underline:hover {
   color: var(--primary-color);
   text-decoration: underline;
   text-decoration-color: red;
+}
+.heart {
+  color: red;
 }

@@ -60,3 +60,19 @@
     display: none;
   }
 }
+/* iphone queries */
+@media (max-width: 400px) {
+  h1 {
+    text-transform: uppercase;
+    font-size: 3.5rem;
+  }
+  h2 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    line-height: 1.2;
+    margin-bottom: 4rem;
+  }
+  .form-group button {
+    font-size: 1.5rem;
+  }
+}

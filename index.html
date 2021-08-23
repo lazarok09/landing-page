@@ -1,283 +1,336 @@
 <!DOCTYPE html>
 <html lang="pt-Br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./assets/img/css.svg" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/var.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/elements.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/classes.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/menu.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/styles.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/image.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/gallery.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/contact.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/queries.css" />
+    <title>Landing Page</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" type="text/css" href="./assets/css/var.css" />
-  <link rel="stylesheet" type="text/css" href="./assets/css/elements.css" />
-  <link rel="stylesheet" type="text/css" href="./assets/css/classes.css" />
-  <link rel="stylesheet" type="text/css" href="./assets/css/menu.css" />
-  <link rel="stylesheet" type="text/css" href="./assets/css/styles.css" />
-  <link rel="stylesheet" type="text/css" href="./assets/css/image.css" />
-  <link rel="stylesheet" type="text/css" href="./assets/css/gallery.css" />
-  <link rel="stylesheet" type="text/css" href="./assets/css/contact.css" />
-  <link rel="stylesheet" type="text/css" href="./assets/css/queries.css" />
-  <title>Landing Page</title>
-</head>
+  <body>
+    <input
+      id="close-menu"
+      type="checkbox"
+      role="button"
+      aria-label="close menu"
+      class="close-menu"
+    />
+    <label for="close-menu" title="Close menu" class="close-menu-label"></label>
 
-<body>
-  <input id="close-menu" type="checkbox" role="button" aria-label="close menu" class="close-menu" />
-  <label for="close-menu" title="Close menu" class="close-menu-label"></label>
+    <aside class="menu white-bg">
+      <div class="main-content menu-content">
+        <h1 onclick="getElementById('close-menu').checked = false">
+          <a href="#home"> logo </a>
+        </h1>
+        <nav>
+          <ul onclick="getElementById('close-menu').checked = false">
+            <li><a href="#intro">Intro</a></li>
+            <li><a href="#top3">Top 3</a></li>
+            <li><a href="#galeria">Galeria</a></li>
+            <li><a href="#salary">Salário</a></li>
+            <li><a href="#contact">Contato</a></li>
+          </ul>
+        </nav>
+      </div>
+    </aside>
+    <div class="menu-spacing"></div>
 
-  <aside class="menu white-bg">
-    <div class="main-content menu-content">
-      <h1 onclick="getElementById('close-menu').checked = false"><a href="#home"> logo </a></h1>
-      <nav>
-        <ul onclick="getElementById('close-menu').checked = false">
-          <li><a href="#intro">Intro</a></li>
-          <li><a href="#top3">Top 3</a></li>
-          <li><a href="#galeria">Galeria</a></li>
-          <li><a href="#salary">Salário</a></li>
-          <li><a href="#contact">Contato</a></li>
-        </ul>
-      </nav>
-    </div>
-  </aside>
-  <div class="menu-spacing"></div>
-
-  <!-- home area -->
-  <section id="home" class="intro main-bg section">
-    <div class="main-content intro-content">
-      <div class="intro-text-content">
-        <h2>Desenvolver Software é a nova onda do imperador</h2>
+    <!-- home area -->
+    <section id="home" class="intro main-bg section">
+      <div class="main-content intro-content">
+        <div class="intro-text-content">
+          <h2>Desenvolver Software é a nova onda do imperador</h2>
+          <p>
+            Na computação, o desenvolvimento de software é o ato de elaborar e
+            implementar um sistema computacional, isto é, transformar a
+            necessidade de um utilizador ou de um mercado em um produto de
+            software[1].
+            <br />
+            Em outras palavras, é através da programação dar
+            <strong>vida</strong> a uma
+            <strong>ideia.</strong>
+          </p>
+        </div>
+        <div class="intro-img">
+          <img
+            src="./assets/img/javascript.svg"
+            alt="Um rapaz segurando uma logo em forma de bloco gigante da linguagem de estilos CSS, em seguida à sua direita há uma mulher empurrando um bloco gigante da logo da linguagem JavaScript, por sua vez, também a direita desta mulher, está um outro rapaz na mesma direção, segurando um bloco gigante com a logo da linguagem de marcação HTML"
+          />
+        </div>
+      </div>
+    </section>
+    <!-- introduction area -->
+    <section id="intro" class="white-bg section">
+      <div class="main-content top3-content">
+        <h2>TOP 3 áreas</h2>
         <p>
-          Na computação, o desenvolvimento de software é o ato de elaborar e
-          implementar um sistema computacional, isto é, transformar a
-          necessidade de um utilizador ou de um mercado em um produto de
-          software[1].
-          <br />
-          Em outras palavras, é através da programação dar
-          <strong>vida</strong> a uma
-          <strong>ideia.</strong>
+          Front End é o desenvolvedor de interface, aquilo que o usuário final
+          enxerga no dia a dia. Ele pode desenvolver interfaces para internet
+          (web) ou para dispositivos móveis (mobile).
+        </p>
+        <p>
+          Back End, como o próprio nome sugere, vem da ideia do que tem por trás
+          de uma aplicação.
+        </p>
+        <p>
+          Desenvolvedor Mobile ligadas a estruturação e criação de interfaces,
+          aplicativos e dashboards para dispositivos móveis.
         </p>
       </div>
-      <div class="intro-img">
-        <img src="./assets/img/javascript.svg"
-          alt="Um rapaz segurando uma logo em forma de bloco gigante da linguagem de estilos CSS, em seguida à sua direita há uma mulher empurrando um bloco gigante da logo da linguagem JavaScript, por sua vez, também a direita desta mulher, está um outro rapaz na mesma direção, segurando um bloco gigante com a logo da linguagem de marcação HTML" />
-      </div>
-    </div>
-  </section>
-  <!-- introduction area -->
-  <section id="intro" class="white-bg section">
-    <div class="main-content top3-content">
-      <h2>TOP 3 áreas</h2>
-      <p>
-        Front End é o desenvolvedor de interface, aquilo que o usuário final
-        enxerga no dia a dia. Ele pode desenvolver interfaces para internet
-        (web) ou para dispositivos móveis (mobile).
-      </p>
-      <p>
-        Back End, como o próprio nome sugere, vem da ideia do que tem por trás
-        de uma aplicação.
-      </p>
-      <p>
-        Desenvolvedor Mobile ligadas a estruturação e criação de interfaces,
-        aplicativos e dashboards para dispositivos móveis.
-      </p>
-    </div>
-  </section>
-  <!-- top 3 area -->
-  <section id="top3" class="grid-one main-bg section">
-    <div class="main-content grid-one-content">
-      <h2 class="grid-main-heading">As 3 vertentes</h2>
-      <p class="grid-description">
-        Abaixo uma descrição de cada função do profissional de TI
-      </p>
-      <div class="grid">
-        <article>
-          <h3>Front-end</h3>
-          <p>
-            Podemos classificar como a parte visual de um site, aquilo que
-            conseguimos interagir. Quem trabalha com Front End é responsável
-            por desenvolver por meio de código uma interface gráfica,
-            normalmente com as tecnologias base da Web (HTML, CSS e
-            JavaScript).
-          </p>
-        </article>
-        <article>
-          <h3>Back-end</h3>
-          <p>
-            O Back End trabalha em boa partes dos casos fazendo a ponte entre
-            os dados que vem do navegador rumo ao banco de dados e vice-versa,
-            sempre aplicando as devidas regras de negócio, validações e
-            garantias em um ambiente onde o usuário final não tenha acesso e
-            possa manipular algo.
-          </p>
-        </article>
-        <article>
-          <h3>Mobile</h3>
-          <p>
-            Pertencente à área da TI, o desenvolvimento mobile é o segmento
-            responsável pelo planejamento, elaboração, testes e implementação
-            de softwares para os dispositivos móveis. O que pode incluir o
-            contato ou não com back-end e front-end ao mesmo tempo.
-          </p>
-        </article>
-      </div>
-    </div>
-  </section>
-  <!-- gallery area  -->
-  <section id="galeria" class="grid-one white-bg section">
-    <div class="main-content grid-one-content">
-      <h2 class="grid-main-heading">Galeria</h2>
-      <p class="grid-description">
-        Você pode conferir abaixo um serviço na internet que provê imagens
-        aleatórias. E isso é incrível, pois é um software livre e grátis para
-        quem quiser utilizar!
-        <a href="https://source.unsplash.com/" target="_blank">unsplash website</a>
-      </p>
-      <div class="grid">
-        <div class="gallery-img">
-          <img src="https://source.unsplash.com/random/360x360?r=1"
-            alt="uma imagem randômica provida pelo website do unsplash" />
-        </div>
-        <div class="gallery-img">
-          <img src="https://source.unsplash.com/random/360x360?r=2"
-            alt="uma imagem randômica provida pelo website do unsplash" />
-        </div>
-        <div class="gallery-img">
-          <img src="https://source.unsplash.com/random/360x360?r=3"
-            alt="uma imagem randômica provida pelo website do unsplash" />
-        </div>
-        <div class="gallery-img">
-          <img src="https://source.unsplash.com/random/360x360?r=4"
-            alt="uma imagem randômica provida pelo website do unsplash" />
-        </div>
-        <div class="gallery-img">
-          <img src="https://source.unsplash.com/random/360x360?r=5"
-            alt="uma imagem randômica provida pelo website do unsplash" />
-        </div>
-        <div class="gallery-img">
-          <img src="https://source.unsplash.com/random/360x360?r=6"
-            alt="uma imagem randômica provida pelo website do unsplash" />
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- salary area -->
-  <section id="salary" class="white-bg section">
-    <div class="main-content top3-content">
-      <h2>salário</h2>
-      <p>
-        Abaixo na nossa tabela podemos verificar o quanto um desenvolvedor
-        recebe em média na sua carreira para os cargos de
-        <strong>júnior</strong>, <strong>pleno</strong> e
-        <strong>sênior</strong> respectivamente.
-      </p>
-      <!-- table div -->
-      <div class="responsive-table">
-        <table>
-          <caption>
-            Salário médio geral por área e nível.
-          </caption>
-
-          <thead>
-            <tr>
-              <th>Nível</th>
-              <th>Junior</th>
-              <th>Pleno</th>
-              <th>Sênior</th>
-            </tr>
-          </thead>
-
-          <tbody>
-            <tr>
-              <th class="area-name">Front-end</th>
-              <td>2.130 R$</td>
-              <td>4.430 R$</td>
-              <td>10.000 R$</td>
-            </tr>
-            <tr>
-              <th class="area-name">Back-end</th>
-              <td>2.955 R$</td>
-              <td>5.594 R$</td>
-              <td>11.601 R$</td>
-            </tr>
-            <tr>
-              <th class="area-name">Mobile</th>
-              <td>3.439 R$</td>
-              <td>5.360 R$</td>
-              <td>12.120 R$</td>
-            </tr>
-          </tbody>
-          <tfoot>
-            <tr>
-              <td>
-                fonte:
-
-                <i><a target="_blank" href="https://pesquisa.codigofonte.com.br/">Código Fonte TV</a>
-                </i>
-              </td>
-              <td></td>
-              <td></td>
-              <td></td>
-            </tr>
-          </tfoot>
-        </table>
-      </div>
-      <!-- table div end -->
-    </div>
-  </section>
-
-  <!-- contact area  -->
-
-  <section id="contact" class="intro main-content main-bg section">
-    <div class="main-content intro-content">
-      <div class="intro-text-content">
-        <h2>networking é a chave da riqueza</h2>
-        <p>
-          Networking é a ação de trabalhar sua rede de contatos, trocando informações relevantes com base na colaboração
-          e ajuda mútua.
-
-          O que inclui atividades voltadas à carreira e negócios, através da manutenção de
-          relacionamentos interpessoais produtivos. Através do Networking podemos conseguir vagas de emprego, dicas de
-          cursos e especializações nas mais diversas áreas.
-        <blockquote>
-          É o verdadeiro <i>Como Fazer Amigos e Influenciar Pessoas </i>
-        </blockquote>
+    </section>
+    <!-- top 3 area -->
+    <section id="top3" class="grid-one main-bg section">
+      <div class="main-content grid-one-content">
+        <h2 class="grid-main-heading">As 3 vertentes</h2>
+        <p class="grid-description">
+          Abaixo uma descrição de cada função do profissional de TI
         </p>
-        <h6>Por isso, te convido a entrar em contato comigo</h6>
+        <div class="grid">
+          <article>
+            <h3>Front-end</h3>
+            <p>
+              Podemos classificar como a parte visual de um site, aquilo que
+              conseguimos interagir. Quem trabalha com Front End é responsável
+              por desenvolver por meio de código uma interface gráfica,
+              normalmente com as tecnologias base da Web (HTML, CSS e
+              JavaScript).
+            </p>
+          </article>
+          <article>
+            <h3>Back-end</h3>
+            <p>
+              O Back End trabalha em boa partes dos casos fazendo a ponte entre
+              os dados que vem do navegador rumo ao banco de dados e vice-versa,
+              sempre aplicando as devidas regras de negócio, validações e
+              garantias em um ambiente onde o usuário final não tenha acesso e
+              possa manipular algo.
+            </p>
+          </article>
+          <article>
+            <h3>Mobile</h3>
+            <p>
+              Pertencente à área da TI, o desenvolvimento mobile é o segmento
+              responsável pelo planejamento, elaboração, testes e implementação
+              de softwares para os dispositivos móveis. O que pode incluir o
+              contato ou não com back-end e front-end ao mesmo tempo.
+            </p>
+          </article>
+        </div>
       </div>
-      <div class="intro-img">
-        <img src="./assets/img/contato.svg"
-          alt="Um rapaz segurando uma logo em forma de bloco gigante da linguagem de estilos CSS, em seguida à sua direita há uma mulher empurrando um bloco gigante da logo da linguagem JavaScript, por sua vez, também a direita desta mulher, está um outro rapaz na mesma direção, segurando um bloco gigante com a logo da linguagem de marcação HTML" />
+    </section>
+    <!-- gallery area  -->
+    <section id="galeria" class="grid-one white-bg section">
+      <div class="main-content grid-one-content">
+        <h2 class="grid-main-heading">Galeria</h2>
+        <p class="grid-description">
+          Você pode conferir abaixo um serviço na internet que provê imagens
+          aleatórias. E isso é incrível, pois é um software livre e grátis para
+          quem quiser utilizar!
+          <a
+            class="ancor-red-underline"
+            href="https://source.unsplash.com/"
+            target="_blank"
+            >unsplash website</a
+          >
+        </p>
+        <div class="grid">
+          <div class="gallery-img">
+            <img
+              src="https://source.unsplash.com/random/360x360?r=1"
+              alt="uma imagem randômica provida pelo website do unsplash"
+            />
+          </div>
+          <div class="gallery-img">
+            <img
+              src="https://source.unsplash.com/random/360x360?r=2"
+              alt="uma imagem randômica provida pelo website do unsplash"
+            />
+          </div>
+          <div class="gallery-img">
+            <img
+              src="https://source.unsplash.com/random/360x360?r=3"
+              alt="uma imagem randômica provida pelo website do unsplash"
+            />
+          </div>
+          <div class="gallery-img">
+            <img
+              src="https://source.unsplash.com/random/360x360?r=4"
+              alt="uma imagem randômica provida pelo website do unsplash"
+            />
+          </div>
+          <div class="gallery-img">
+            <img
+              src="https://source.unsplash.com/random/360x360?r=5"
+              alt="uma imagem randômica provida pelo website do unsplash"
+            />
+          </div>
+          <div class="gallery-img">
+            <img
+              src="https://source.unsplash.com/random/360x360?r=6"
+              alt="uma imagem randômica provida pelo website do unsplash"
+            />
+          </div>
+        </div>
       </div>
-      <div class="contact-form">
-        <fieldset class="form-grid">
-          <legend>Formulário para contato.</legend>
-          <div class="form-group">
-            <label for="first-name">Nome</label>
-            <input id="first-name" type="text" name="nome" placeholder="Seu nome" />
-          </div>
-          <div class="form-group">
-            <label for="last-name">Sobrenome</label>
-            <input id="last-name" type="text" name="sobrenome" placeholder="Seu sobrenome" />
-          </div>
-          <div class="form-group">
-            <label for="email">E-mail</label>
-            <input id="email" type="email" name="e-mail" placeholder="Seu email" />
-          </div>
-          <div class="form-group full-width">
-            <label for="message">Message</label>
-            <textarea id="message" name="messagem" cols="30" rows="10">
+    </section>
+
+    <!-- salary area -->
+    <section id="salary" class="white-bg section">
+      <div class="main-content top3-content">
+        <h2>salário</h2>
+        <p>
+          Abaixo na nossa tabela podemos verificar o quanto um desenvolvedor
+          recebe em média na sua carreira para os cargos de
+          <strong>júnior</strong>, <strong>pleno</strong> e
+          <strong>sênior</strong> respectivamente.
+        </p>
+        <!-- table div -->
+        <div class="responsive-table">
+          <table>
+            <caption>
+              Salário médio geral por área e nível.
+            </caption>
+
+            <thead>
+              <tr>
+                <th>Nível</th>
+                <th>Junior</th>
+                <th>Pleno</th>
+                <th>Sênior</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <th class="area-name">Front-end</th>
+                <td>2.130 R$</td>
+                <td>4.430 R$</td>
+                <td>10.000 R$</td>
+              </tr>
+              <tr>
+                <th class="area-name">Back-end</th>
+                <td>2.955 R$</td>
+                <td>5.594 R$</td>
+                <td>11.601 R$</td>
+              </tr>
+              <tr>
+                <th class="area-name">Mobile</th>
+                <td>3.439 R$</td>
+                <td>5.360 R$</td>
+                <td>12.120 R$</td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <td>
+                  fonte:
+
+                  <i
+                    ><a
+                      class="ancor-red-underline"
+                      target="_blank"
+                      href="https://pesquisa.codigofonte.com.br/"
+                      >Código Fonte TV</a
+                    >
+                  </i>
+                </td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+        <!-- table div end -->
+      </div>
+    </section>
+
+    <!-- contact area  -->
+
+    <section id="contact" class="intro main-bg section">
+      <div class="main-content intro-content">
+        <div class="intro-text-content">
+          <h2>networking é a chave da riqueza</h2>
+          <p>
+            Networking é a ação de trabalhar sua rede de contatos, trocando
+            informações relevantes com base na colaboração e ajuda mútua. O que
+            inclui atividades voltadas à carreira e negócios, através da
+            manutenção de relacionamentos interpessoais produtivos. Através do
+            Networking podemos conseguir vagas de emprego, dicas de cursos e
+            especializações nas mais diversas áreas.
+          </p>
+          <h6>Por isso, te convido a entrar em contato comigo</h6>
+        </div>
+        <div class="intro-img">
+          <img
+            src="./assets/img/contato.svg"
+            alt="Um rapaz segurando uma logo em forma de bloco gigante da linguagem de estilos CSS, em seguida à sua direita há uma mulher empurrando um bloco gigante da logo da linguagem JavaScript, por sua vez, também a direita desta mulher, está um outro rapaz na mesma direção, segurando um bloco gigante com a logo da linguagem de marcação HTML"
+          />
+        </div>
+
+        <div class="contact-form">
+          <fieldset class="form-grid">
+            <legend>Formulário para contato.</legend>
+            <div class="form-group">
+              <label for="first-name">Nome</label>
+              <input
+                id="first-name"
+                type="text"
+                name="nome"
+                placeholder="Seu nome"
+              />
+            </div>
+            <div class="form-group">
+              <label for="last-name">Sobrenome</label>
+              <input
+                id="last-name"
+                type="text"
+                name="sobrenome"
+                placeholder="Seu sobrenome"
+              />
+            </div>
+            <div class="form-group">
+              <label for="email">E-mail</label>
+              <input
+                id="email"
+                type="email"
+                name="e-mail"
+                placeholder="Seu email"
+              />
+            </div>
+            <div class="form-group full-width">
+              <label for="message">Message</label>
+              <textarea id="message" name="messagem" cols="30" rows="10">
               </textarea>
-          </div>
-          <div class="form-group full-width">
-            <button type="submit">Enviar formulário</button>
-          </div>
-        </fieldset>
+            </div>
+            <div class="form-group full-width">
+              <button type="submit">Enviar formulário</button>
+            </div>
+          </fieldset>
+        </div>
       </div>
-    </div>
-  </section>
-
-</body>
-<footer class="white-bg">
-  <p>Feito com <span>❤</span> por
-    <a target="_blank" href="https://www.linkedin.com/in/lazarok09/">Lázaro Souza</a>
-  </p>
-</footer>
-<a class="back-to-top" href="#">➤</a>
+    </section>
+  </body>
+  <footer class="white-bg">
+    <p>
+      Feito com <span class="heart">❤</span> por
+      <a
+        class="ancor-red-underline"
+        target="_blank"
+        href="https://www.linkedin.com/in/lazarok09/"
+        >Lázaro Souza</a
+      >
+    </p>
+  </footer>
+  <a class="back-to-top" href="#">➤</a>
 </html>

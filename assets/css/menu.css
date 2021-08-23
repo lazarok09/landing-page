@@ -33,6 +33,7 @@ font-family: 'Open Sans', sans-serif; // regular an bold : 400/italic, 700;
   list-style: none;
   display: flex;
 }
+
 .menu ul li a {
   display: block;
   padding: 2rem;

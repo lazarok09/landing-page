@@ -11,8 +11,7 @@
 
 <p align="center">
 
-  <img alt="License" src="https://img.shields.io/static/v1?label=license&message=MIT&color=red&labelColor=000000">
-<img alt="RepoSize" src="https://img.shields.io/github/languages/code-size/lazarok09/react-pokemon?color=red&labelColor=000000">
+  <img alt="License" src="https://img.shields.io/static/v1?label=license&message=MIT&color=eee&labelColor=0a1128">
 </p>
 <br>
 
